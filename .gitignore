@@ -1,3 +1,6 @@
 node_modules
 ui/build
 .idea
+.DS_Store
+ui/.DS_Store
+ui/src/.DS_Store
