@@ -1,5 +1,5 @@
 IMAGE?=virag/redis-enterprise-docker-extension
-TAG?=latest
+TAG?=0.1.0
 
 BUILDER=buildx-multi-arch
 

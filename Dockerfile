@@ -27,7 +27,9 @@ LABEL org.opencontainers.image.title="Redis Enterprise" \
     org.opencontainers.image.description="Docker extension for Redis Enterprise" \
     org.opencontainers.image.vendor="Virag Tripathi" \
     com.docker.desktop.extension.api.version="0.3.4" \
-    com.docker.extension.screenshots="https://github.com/redis-field-engineering/redis-enterprise-docker-extension/blob/main/docs/screenshots/redis-enterprise-docker-extension.png" \
+    com.docker.extension.screenshots="[ \
+        {\"url\": \"https://raw.githubusercontent.com/redis-field-engineering/redis-enterprise-docker-extension/main/docs/screenshots/redis-enterprise-docker-extension.png\", \"alt\": \"Screenshot\"} \
+        ]" \
     com.docker.desktop.extension.icon="https://raw.githubusercontent.com/redis-field-engineering/redis-enterprise-docker-extension/main/redis-enterprise.svg" \
     com.docker.extension.detailed-description="Redis Enterprise Docker Extension allows you to create Redis Enterprise Databases without having to install Redis Enterprise locally or manually create a Redis Enterprise Docker container. Redis Enterprise Docker Extension lets you create Redis Enterprise Databases using the free tier i.e. 30-day FREE TRIAL!" \
     com.docker.extension.publisher-url='[{"title":"GitHub", "url":"https://github.com/redis-field-engineering/redis-enterprise-docker-extension/"}]' \
