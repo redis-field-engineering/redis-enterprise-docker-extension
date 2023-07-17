@@ -6,7 +6,6 @@ Redis Enterprise Docker Extension allows you to create Redis Enterprise Database
 
 ## Installation
 
----
 To install the extension, use `make install-extension` **or**:
 
 ```shell
@@ -19,13 +18,11 @@ To preview the extension in Docker Desktop, open Docker Dashboard once the insta
 
 ## Usage
 
----
 To connect to Redis Enterprise Cluster via Admin UI, you can use the `Basic` authentication method by providing a Email/Username as `demo@redis.com` and Password as `redislabs`
 please, refer to [the official Redis Enterprise documentation][8] for creating Redis Enterprise Databases.
 
 ## Screenshots
 
----
 ![Redis Enterprise Docker Extension][1]
 
 ![Login Page][2]
@@ -49,9 +46,8 @@ please, refer to [the official Redis Enterprise documentation][8] for creating R
 [7]: https://raw.githubusercontent.com/redis-field-engineering/redis-enterprise-docker-extension/main/docs/screenshots/05-redis-cli.png
 [8]: https://docs.redis.com/latest/rs/installing-upgrading/quickstarts/docker-quickstart/#create-a-database
 
-### Clean up
+## Clean up
 
----
 To remove the extension:
 
 ```shell
@@ -60,5 +56,4 @@ docker extension rm virag/redis-enterprise-docker-extension:latest
 
 ## License
 
----
 Redis Enterprise Docker Extension is licensed under the MIT License. Copyright © 2023 Redis, Inc.
