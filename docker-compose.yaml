@@ -1,0 +1,27 @@
+services:
+
+  redis-enterprise:
+    image: redislabs/redis
+    platform: linux/amd64
+    ports:
+      - 9443:9443
+      - 8443:8443
+      - 8070:8070
+      - 12000:12000
+      - 12001:12001
+      - 12002:12002
+      - 12003:12003
+    cap_add:
+      - SYS_RESOURCE
+    deploy:
+      resources:
+        reservations:
+          memory: 8G
+
+  setup:
+    image: redislabs/redis
+    platform: linux/amd64
+    depends_on:
+      - redis-enterprise
+    restart: "no"
+    entrypoint: bash -c "while [[ "$$(curl -o /dev/null -w ''%{http_code}'' -X POST -H 'Content-Type:application/json' -d '{"action":"create_cluster","cluster":{"name":"re-extension-cluster.local"},"node":{"paths":{"persistent_path":"/var/opt/redislabs/persist","ephemeral_path":"/var/opt/redislabs/tmp"}},"credentials":{"username":"demo@redis.com","password":"redislabs"}}' -k https://host.docker.internal:9443/v1/bootstrap/create_cluster)" != "200" ]]; do sleep 5; done"
