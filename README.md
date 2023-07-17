@@ -24,6 +24,8 @@ To preview the extension in Docker Desktop, open Docker Dashboard once the insta
 To connect to Redis Enterprise Cluster via Admin UI, you can use the `Basic` authentication method by providing a Email/Username as `demo@redis.com` and Password as `redislabs`
 please, refer to [the official Redis Enterprise documentation][8] for creating Redis Enterprise Databases.
 
+**💡** Exposed Redis Enterprise Database ports are `12000`, `12001`, `12002` and `12003`
+
 ## Screenshots
 
 ![Redis Enterprise Docker Extension][1]
