@@ -9,11 +9,11 @@ Redis Enterprise Docker Extension allows you to create Redis Enterprise Database
 #### Prerequisite
 [Docker Desktop 4.10.0](https://docs.docker.com/desktop/release-notes/#docker-desktop-4100) or newer installed
 
-To install the extension directly from the Docker Desktop marketplace, use [Open Docker Desktop](https://open.docker.com/extensions/marketplace?extensionId=virag/redis-enterprise-docker-extension&tag=latest) 
+To install the extension directly from the Docker Desktop marketplace, search for `redis enterprise` or [Open Docker Desktop](https://open.docker.com/extensions/marketplace?extensionId=virag/redis-enterprise-docker-extension) 
 **or**:
 
 ```shell
-  docker extension install virag/redis-enterprise-docker-extension:latest
+  docker extension install virag/redis-enterprise-docker-extension
 ```
 
 > If you want to automate this command, use the `-f` or `--force` flag to accept the warning message.
@@ -55,9 +55,10 @@ Please refer to [the official Redis Enterprise documentation][8] for creating Re
 ## Clean up
 
 To remove the extension:
+Uninstall from the Docker Desktop **or**:
 
 ```shell
-docker extension rm virag/redis-enterprise-docker-extension:latest
+docker extension rm virag/redis-enterprise-docker-extension
 ```
 
 ## License
