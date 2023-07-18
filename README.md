@@ -9,6 +9,12 @@ Redis Enterprise Docker Extension allows you to create Redis Enterprise Database
 #### Prerequisite
 [Docker Desktop 4.10.0](https://docs.docker.com/desktop/release-notes/#docker-desktop-4100) or newer installed
 
+**🦺** **Docker Desktop for Mac with Apple silicon**
+
+![Enable Virtualization Framework][9]
+
+![Enable Rosetta2 Emulation][10]
+
 To install the extension directly from the Docker Desktop marketplace, search for `redis enterprise` or [Open Docker Desktop](https://open.docker.com/extensions/marketplace?extensionId=virag/redis-enterprise-docker-extension) 
 **or**:
 
@@ -51,6 +57,8 @@ Please refer to [the official Redis Enterprise documentation][8] for creating Re
 [6]: https://raw.githubusercontent.com/redis-field-engineering/redis-enterprise-docker-extension/main/docs/screenshots/04-rladmin-status.png
 [7]: https://raw.githubusercontent.com/redis-field-engineering/redis-enterprise-docker-extension/main/docs/screenshots/05-redis-cli.png
 [8]: https://docs.redis.com/latest/rs/installing-upgrading/quickstarts/docker-quickstart/#create-a-database
+[9]: https://raw.githubusercontent.com/redis-field-engineering/redis-enterprise-docker-extension/main/docs/screenshots/docker_enable_virtualization_framework.png
+[10]: https://raw.githubusercontent.com/redis-field-engineering/redis-enterprise-docker-extension/main/docs/screenshots/docker_enable_rosetta2_emulation.png
 
 ## Clean up
 
